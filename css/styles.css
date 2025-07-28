@@ -209,11 +209,11 @@ img {
 }
 
 .img-background {
+    border-radius: 0px 0px 4px 4px;
     background-color: #ffffff;
 }
 
 .container-team {
-    border-radius: 0px 0px 4px 4px;
     padding: 32px 0;
 }
 
@@ -239,6 +239,10 @@ img {
 
 /* Our portfolio */
 
+.section-portfolio {
+    padding: 120px 0 120px 0;
+}
+
 .portfolio {
     font-weight: 700;
     font-size: 36px;
@@ -253,10 +257,22 @@ img {
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.portfolio-list-item {
     width: calc((100%-3*24px)/4);
 }
 
-.portfolio-item {
+.container-portfolio {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
+}
+
+.portfolio-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
