@@ -69,7 +69,6 @@ img {
 .nav-list-item {
     display: flex;
     gap: 40px;
-    padding: 24px 0;
 }
 
 .link {
@@ -77,6 +76,7 @@ img {
     letter-spacing: 0.02em;
     font-weight: 500;
     color: #2e2f42;
+    padding: 24px 0;
 }
 
 .link:hover, .link:focus {
