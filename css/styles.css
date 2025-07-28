@@ -4,8 +4,20 @@ body {
     color: #434455;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -23,11 +35,15 @@ a {
     color: #404bbf;
 }
 
+.address-list {
+    font-style: normal;
+}
+
 .link-address {
     line-height: 1.5;
-        letter-spacing: 0.02em;
-        font-weight: 500;
-        color: #434455;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    color: #434455;
 }
 
 .link-address:hover, .link-address:focus {
@@ -48,7 +64,20 @@ a {
     background-color: #2e2f42;
 }
 
-.benefits-list {
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.benefits-item {
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
@@ -98,13 +127,15 @@ a {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    padding-top: 120px;
+    margin-bottom: 72px;
 }
 
 .img-background {
     background-color: #ffffff;
 }
 
-.team-list {
+.team-item {
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
@@ -129,9 +160,11 @@ a {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    padding-top: 120px;
+    margin-bottom: 72px;
 }
 
-.portfolio-list {
+.portfolio-item {
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
@@ -167,6 +200,44 @@ a {
     color: #2e2f42;
 }
 
-.address-list {
-    font-style: normal;
+.container {
+    max-width: 1128px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.benefits-list, h3 {
+    margin-bottom: 8px;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list-item {
+    display: flex;
+}
+
+.address-list-item {
+    display: flex;
+}
+
+.benefits-list {
+    display: flex;
+    gap: 24px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
+    padding-bottom: 120px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc((100%-3*24px)/4);
+    padding-bottom: 120px;
 }
